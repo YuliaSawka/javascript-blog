@@ -1,10 +1,9 @@
 {
-  "name": "javascript-blog",
+  "name": "taskrunner",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-
     "init-project": "npm install && npm-run-all init:*",
 
     "init:dirs": "mkdirp sass css vendor images js",
@@ -24,17 +23,21 @@
     "watch": "npm-run-all build build-dev -p watch:*",
     "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\"",
     "watch:sassprefixer": "onchange sass/*.scss -- npm run build-dev"
-
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YuliaSawka/javascript-blog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/YuliaSawka/javascript-blog/issues"
-  },
-  "homepage": "https://github.com/YuliaSawka/javascript-blog#readme"
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "mkdirp": "^0.5.1",
+    "sass": "^1.44.0",
+    "npm-run-all": "^4.1.5",
+    "html-validate": "^2.8.0",
+    "onchange": "^5.2.0",
+    "autoprefixer": "^10.2.4",
+    "postcss-cli": "^8.3.1",
+    "postcss": "^8.2.6"
+  }
 }
+
